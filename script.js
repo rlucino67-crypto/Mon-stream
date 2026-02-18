@@ -1,5 +1,5 @@
 //Mot de passe :
-const codeSecret = "MON_CODE_2024"; // Change "MON_CODE_2024" par ce que tu veux
+const codeSecret = "Lucino123"; // Change "MON_CODE_2024" par ce que tu veux
 
 // On demande le code à l'utilisateur
 let saisie = prompt("Accès restreint. Entrez le mot de passe :");
