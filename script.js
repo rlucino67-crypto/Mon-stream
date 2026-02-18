@@ -1,13 +1,16 @@
 //Mot de passe :
-let motDePasse = "";
-while (motDePasse !== "Lucino123") { // Remplace 1234 par ton mot de passe
-    motDePasse = prompt("Veuillez entrer le mot de passe pour accéder au site :");
-    
-    if (motDePasse === null) {
-        // Si l'utilisateur clique sur "Annuler"
-        window.location.href = "https://google.com";
-        break;
-    }
+const codeSecret = "MON_CODE_2024"; // Change "MON_CODE_2024" par ce que tu veux
+
+// On demande le code à l'utilisateur
+let saisie = prompt("Accès restreint. Entrez le mot de passe :");
+
+if (saisie === codeSecret) {
+    // Si c'est bon, on affiche le contenu du site
+    document.body.style.display = "block";
+} else {
+    // Si c'est faux, on affiche un message et on redirige
+    alert("Mot de passe incorrect !");
+    window.location.href = "https://www.google.com";
 }
 
 
