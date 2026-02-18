@@ -1,4 +1,17 @@
- // Fonctions Lightbox
+//Mot de passe :
+let motDePasse = "";
+while (motDePasse !== "Lucino123") { // Remplace 1234 par ton mot de passe
+    motDePasse = prompt("Veuillez entrer le mot de passe pour accéder au site :");
+    
+    if (motDePasse === null) {
+        // Si l'utilisateur clique sur "Annuler"
+        window.location.href = "https://google.com";
+        break;
+    }
+}
+
+
+// Fonctions Lightbox
        function openLightbox(src, title, isVideo = false) {
     const img = document.getElementById('lightbox-img');
     const video = document.getElementById('lightbox-video');
